@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 mongoose.set('useFindAndModify', false);
 const Inventory = mongoose.model('Inventory');
 
-exports.createInventory = (req, res) => {
+exports.createInventory =  (req, res) => {
     const inventory = new Inventory({
         prodname: req.body.prodname,
         qty: req.body.qty,
